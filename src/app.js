@@ -10,6 +10,12 @@ const FileStore = require('session-file-store')(session);
 const app = express();
 
 const { sequelize } = require('../db/models');
+const renderTemplate = require('./lib/renderTemplate');
+
+const main = require('./routes/mainRoutes');
+const reg = require('./routes/regRoutes');
+const auth = require('./routes/authRoutes');
+const logout = require('./routes/logout');
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../public/')));
@@ -31,6 +37,11 @@ const sessionConfig = {
 };
 
 app.use(session(sessionConfig));
+
+app.use('/', main);
+app.use('/reg', reg);
+app.use('/log', auth);
+app.use('/logout', logout);
 
 app.listen(PORT, async () => {
   try {
