@@ -4,7 +4,12 @@ const Layout = require('./Layout');
 module.exports = function Main({ userName }) {
   return (
     <Layout userName={userName}>
-      <h1> Hello world! </h1>
+
+      <div className="main-div">
+
+        <div className="anime-container" />
+
+      </div>
     </Layout>
   );
 };

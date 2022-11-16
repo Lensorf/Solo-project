@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 const renderTemplate = require('../lib/renderTemplate');
-const Main = require('../views/Main');
+const Main = require('../views/Search');
 // const { Twit } = require('../../db/models');
 
 router.get('/', async (req, res) => {

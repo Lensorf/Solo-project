@@ -16,6 +16,8 @@ const main = require('./routes/mainRoutes');
 const reg = require('./routes/regRoutes');
 const auth = require('./routes/authRoutes');
 const logout = require('./routes/logout');
+const search = require('./routes/searchRoutes');
+const addAnime = require('./routes/addAnimeRoutes');
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../public/')));
@@ -42,6 +44,8 @@ app.use('/', main);
 app.use('/reg', reg);
 app.use('/log', auth);
 app.use('/logout', logout);
+app.use('/search', search);
+app.use('/add', addAnime);
 
 app.listen(PORT, async () => {
   try {

@@ -38,6 +38,9 @@ module.exports = function Layout({ children, userName }) {
                       <a className="nav-link" href="/personal">Личный кабинет</a>
                     </li>
                     <li className="nav-item">
+                      <a className="nav-link" href="/search"> Поиск аниме </a>
+                    </li>
+                    <li className="nav-item">
                       <a className="nav-link" href="/logout">Logout</a>
                     </li>
                   </>

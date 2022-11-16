@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.anime-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+#card {
+  max-height: 335px;
+  max-width: 225px;
+  margin: 10px;
+  margin-bottom: 30px;
+}
