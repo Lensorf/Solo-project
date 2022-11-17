@@ -1,0 +1,85 @@
+
+*{
+    background: 0 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.anime-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    /* justify-content: space-around; */
+    margin-top: 15px;
+}
+
+img {
+    max-height: 221.4px;
+    max-width: 158.15px;
+    min-height: 221.4px;;
+    min-width: 158.15px;
+    z-index: -1;
+}
+
+.anime {
+    display: flex;
+    max-height: 330px;
+    max-width: 220px;
+    min-height: 330px;
+    min-width: 220px;
+    margin: 10px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.title {
+    margin-top: 15px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.anime ul.mylists-switch {
+    display: flex;
+    position: absolute;
+    z-index: 1111;
+    right: 5px;
+    bottom: 10px;
+    text-align: center;
+    background: #38383863;
+    border-radius: 3px;
+    backdrop-filter: blur(10px);
+    margin: 0;
+    padding: 0;
+}
+
+.animedone {
+    /* font-family: 'font awesome 5 pro';
+    font-size: 1.1rem;
+    content: "\f373";
+    font-weight: 900; */
+    margin-right: 0;
+
+}
+
+
+ion-icon {
+    font-size: 20px;
+}

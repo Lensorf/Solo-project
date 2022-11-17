@@ -38,6 +38,9 @@ module.exports = function Layout({ children, userName }) {
                       <a className="nav-link" href="/personal">Личный кабинет</a>
                     </li>
                     <li className="nav-item">
+                      <a className="nav-link" href="/liked">Избранное</a>
+                    </li>
+                    <li className="nav-item">
                       <a className="nav-link" href="/search"> Поиск аниме </a>
                     </li>
                     <li className="nav-item">
@@ -59,6 +62,8 @@ module.exports = function Layout({ children, userName }) {
           </div>
         </nav>
         {children}
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
       </body>
     </html>
   );
