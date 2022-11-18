@@ -5,7 +5,7 @@ const Layout = require('./Layout');
 module.exports = function Reg() {
   return (
     <Layout>
-
+      <link rel="stylesheet" href="/css/reg.css" />
       <section className="vh-100 bg-image">
         <div className="mask d-flex align-items-center h-100 gradient-custom-3">
           <div className="container h-100">
@@ -13,7 +13,7 @@ module.exports = function Reg() {
               <div className="col-12 col-md-9 col-lg-7 col-xl-6">
                 <div className="card">
                   <div className="card-body p-5">
-                    <h2 className="text-uppercase text-center mb-5">Создайте аккаунт</h2>
+                    <h2 className="title text-uppercase text-center mb-5">Создайте аккаунт</h2>
                     <form method="POST" action="/reg">
 
                       <div className="form-outline mb-4">
@@ -34,19 +34,19 @@ module.exports = function Reg() {
                       <div className="d-flex justify-content-center">
                         <button
                           type="submit"
-                          className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                          className="floating-button btn btn-success btn-block btn-lg gradient-custom-4 text-body"
                         >
                           Зарегистрироваться
 
                         </button>
                       </div>
 
-                      <p className="text-center text-muted mt-5 mb-0">
+                      <p className="text text-center text-muted mt-5 mb-0">
                         У вас уже есть аккаунт?
                         {' '}
                         <a
-                          href="/signin"
-                          className="fw-bold text-body"
+                          href="/log"
+                          className="linked fw-bold text-body"
                         >
                           <u>Авторизоваться здесь</u>
                         </a>

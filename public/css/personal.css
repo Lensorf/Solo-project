@@ -1,0 +1,41 @@
+.personal {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    font-size: 24px;
+    display: flex;
+    padding: 150px;
+    margin: 150px;
+    border-radius: 30px;
+    border: 2px solid black;
+
+    background-image: url(https://99px.ru/sstorage/53/2022/04/mid_341392_834372.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-color: transparent;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(4px);
+    color: azure;
+    transition: 0.3s linear;
+}
+
+.personal:hover {
+    color: #fe6637;
+    transition: 0.3s linear;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}

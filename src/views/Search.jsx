@@ -9,14 +9,12 @@ module.exports = function Search({ userName }) {
       <script defer src="/js/searchAnime.js" />
       <script defer src="/js/addAnime.js" />
 
-      <h1> Поиск аниме </h1>
-
       <div className="main-div">
 
-        <div className="input-group mb-3">
+        <div className="search mb-3">
           <form className="search">
-            <button className="btn btn-outline-secondary btn-search glow-on-hover search" type="submit" id="button-addon1">SEARCH</button>
-            <input name="key-word" type="text" className="input" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" />
+            <button className="floating-button" type="submit">SEARCH</button>
+            <input name="key-word" type="text" className="vvod" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" />
           </form>
         </div>
 

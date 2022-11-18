@@ -1,0 +1,78 @@
+ion-icon {
+    font-size: 26px;
+}
+
+.navbar {
+    --bs-navbar-padding-x: none;
+    z-index: 1111;
+    text-align: center;
+    background: #38383863;
+    border-radius: 3px;
+    backdrop-filter: blur(2px);
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    color: azure;
+}
+
+.bg-light {
+    --bs-bg-opacity: 0.3;
+}
+
+.container-fluid {
+    text-align: center;
+    background-color: rgba(244, 249, 255, 0.363);
+    display: flex;
+    align-content: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#header {
+    font-size: 14px;
+}
+
+#Greetings {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    color: azure;
+}
+
+#personal {
+    width: 147px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 1000;
+    background-image: url(https://phonoteka.org/uploads/posts/2021-04/1619749679_27-phonoteka_org-p-topovii-anime-fon-32.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-item>a {
+    color: azure;
+    transition: 0.3s linear;
+}
+
+.nav-item:hover>a {
+    color: #fe6637;
+}

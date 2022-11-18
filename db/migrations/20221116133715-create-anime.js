@@ -17,7 +17,7 @@ module.exports = {
       animeUrl: {
         type: Sequelize.TEXT,
       },
-      status: {
+      score: {
         type: Sequelize.TEXT,
       },
       userId: {

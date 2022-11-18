@@ -19,6 +19,9 @@ const logout = require('./routes/logout');
 const search = require('./routes/searchRoutes');
 const addAnime = require('./routes/addAnimeRoutes');
 const liked = require('./routes/likedRoutes');
+const deleteBtn = require('./routes/delLikeAnimeRoutes');
+const cors = require('./middlewares/cors');
+const personal = require('./routes/personalRoutes');
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../public/')));
@@ -44,10 +47,12 @@ app.use(session(sessionConfig));
 app.use('/', main);
 app.use('/reg', reg);
 app.use('/log', auth);
-app.use('/logout', logout);
-app.use('/search', search);
-app.use('/add', addAnime);
-app.use('/liked', liked);
+app.use('/logout', cors, logout);
+app.use('/search', cors, search);
+app.use('/add', cors, addAnime);
+app.use('/liked', cors, liked);
+app.use('/delete', cors, deleteBtn);
+app.use('/personal', cors, personal);
 
 app.listen(PORT, async () => {
   try {

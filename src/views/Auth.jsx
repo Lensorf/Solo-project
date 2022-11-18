@@ -4,6 +4,7 @@ const Layout = require('./Layout');
 module.exports = function Auth() {
   return (
     <Layout>
+      <link rel="stylesheet" href="/css/log.css" />
       <section className="vh-100 bg-image">
         <div className="mask d-flex align-items-center h-100 gradient-custom-3">
           <div className="container h-100">
@@ -11,7 +12,7 @@ module.exports = function Auth() {
               <div className="col-12 col-md-9 col-lg-7 col-xl-6">
                 <div className="card">
                   <div className="card-body p-5">
-                    <h2 className="text-uppercase text-center mb-5">Авторизация</h2>
+                    <h2 className="title text-uppercase text-center mb-5">Авторизация</h2>
                     <form method="POST" action="/log">
                       <div className="phone-email">
                         <div className="form-outline mb-4 divMail">
@@ -28,12 +29,23 @@ module.exports = function Auth() {
                       <div className="d-flex justify-content-center">
                         <button
                           type="submit"
-                          className="btn btn-success btn-block btn-lg gradient-custom-4 text-body"
+                          className="floating-button btn btn-success btn-block btn-lg gradient-custom-4 text-body"
                         >
                           Войти
 
                         </button>
                       </div>
+                      <p className="text text-center text-muted mt-5 mb-0">
+                        У вас ещё нет аккаунта?
+                        {' '}
+                        <a
+                          href="/reg"
+                          className="linked fw-bold text-body"
+                        >
+                          <u>Зарегистрироваться здесь</u>
+                        </a>
+
+                      </p>
 
                     </form>
                   </div>

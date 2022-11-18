@@ -2,12 +2,9 @@ const searchForm = document.querySelector('.search');
 const inputGood = document.querySelector('input');
 const animeMainDiv = document.querySelector('.anime-container');
 
-searchForm.addEventListener('submit', async (e) => {
-  animeMainDiv.innerHTML = '';
-  e.preventDefault();
+const req = async () => {
   try {
-    const topic = inputGood.value;
-    const url = `https://shikimori.one/api/animes/search?q=${topic}`;
+    const url = 'https://shikimori.one/api/animes?limit=100&score=9';
 
     const response = await fetch(url);
     const result = await response.json();
@@ -26,17 +23,17 @@ searchForm.addEventListener('submit', async (e) => {
       <a class="liked" href="https://shikimori.one/${article.url}" className="title">
       ${article.russian}
       </a>
-      </div>
-      <p class="text" id="${article.score}">
+      <p class="text" score="${article.score}">
       Рейтинг аниме: ${article.score} / 10
       </p>
-     <button class="addAnime floating-button" id="btn-like">LIKE</button>
+      </div>
      </div>
        `;
       animeMainDiv.appendChild(animeDiv);
-      inputGood.value = '';
     });
   } catch (error) {
     console.error(error);
   }
-});
+};
+
+req();

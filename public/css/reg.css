@@ -1,0 +1,90 @@
+.card {
+    background-image: url(https://www.desktophut.ru/wp-content/uploads/2017/12/megumin.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 25px;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.floating-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 30px;
+    margin: 10px 20px;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    border: 2px solid #fe6637;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fe6637;
+    transition: .2s ease-in-out;
+  }
+  .floating-button:before {
+    content: "";
+    background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -8px;
+    left: -75px;
+    transform: skewX(-45deg);
+  }
+  
+  .floating-button:hover {
+    background: #fe6637;
+    color: #fff;
+  }
+  .floating-button:hover:before {
+    left: 150px;
+    transition: .5s ease-in-out;
+  }
+
+  .linked {
+    text-decoration: none;
+    color: azure;
+    transition: 0.3s linear;
+  }
+  
+  .text {
+      margin-top: 7px;
+      text-decoration: none;
+      /* color: rgba(139, 184, 241, 0.856); */
+      color: azure;
+      transition: 0.3s linear;
+  }
+  
+  .text:hover {
+    color: #fe6637;
+    transition: 0.3s linear;
+  }
+  
+  .linked:hover {
+    color: #fe6637;
+    transition: 0.3s linear;
+  }
+
+  u {
+    text-decoration: none;
+    color: azure;
+    transition: 0.3s linear;
+  }
+
+  .title {
+    text-decoration: none;
+    color: azure;
+    transition: 0.3s linear;
+  }
+
+  .title:hover {
+    color: #fe6637;
+    transition: 0.3s linear;
+  }
+  

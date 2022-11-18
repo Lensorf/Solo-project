@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     imageUrl: DataTypes.TEXT,
     title: DataTypes.TEXT,
     animeUrl: DataTypes.TEXT,
-    status: DataTypes.TEXT,
+    score: DataTypes.INTEGER,
     userId: DataTypes.TEXT,
   }, {
     sequelize,

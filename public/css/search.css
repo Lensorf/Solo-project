@@ -9,15 +9,148 @@
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
-  align-items: center;
+  align-items: baseline;
   align-content: center;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
-#card {
-  max-height: 335px;
-  max-width: 225px;
+img {
+  max-height: 251.4px;
+  max-width: 198.15px;
+  min-height: 251.4px;;
+  min-width: 198.15px;
+  z-index: -1;
+  margin-bottom: 5px;
+}
+
+.anime {
+  display: flex;
+  max-height: 330px;
+  max-width: 220px;
+  min-height: 330px;
+  min-width: 220px;
   margin: 10px;
-  margin-bottom: 30px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.anime ul.mylists-switch {
+  display: flex;
+  position: absolute;
+  z-index: 1111;
+  right: 17px;
+  bottom: 75px;
+  text-align: center;
+  background: #38383863;
+  border-radius: 3px;
+  backdrop-filter: blur(10px);
+  margin: 0;
+  padding: 0;
+}
+
+.mylists-switch li {
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 2px;
+}
+
+#icons {
+  font-size: 22px;
+  color: bisque;
+}
+
+.liked {
+  text-decoration: none;
+  color: azure;
+  transition: 0.3s linear;
+}
+
+.liked:hover {
+  color: #fe6637;;
+  transition: 0.3s linear;
+}
+
+.floating-button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 30px;
+  margin: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  border: 2px solid #fe6637;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fe6637;
+  transition: .2s ease-in-out;
+}
+
+.addAnime {
+  margin-bottom: 40px;
+}
+
+.floating-button:before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: -8px;
+  left: -75px;
+  transform: skewX(-45deg);
+}
+
+.floating-button:hover {
+  background: #fe6637;
+  color: #fff;
+}
+.floating-button:hover:before {
+  left: 150px;
+  transition: .5s ease-in-out;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.text {
+  color: azure;
+  margin-top: 7px;
+  text-decoration: none;
+}
+
+.text:hover {
+  color: #fe6637;;
+  transition: 0.3s linear;
+}
+
+.search {
+  display: flex;
+  margin: 20px;
+  margin-left: 350px;
+  left: 37%;
+}
+
+.vvod {
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 100px;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
 }
